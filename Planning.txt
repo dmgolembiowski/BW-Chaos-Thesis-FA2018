@@ -1,0 +1,16 @@
+08/24/2018:
+Research Topics?
+1.) Why does the number of limits change for the logistic chaos function?
+
+2.) What condition(s) must be met for the number of limits to change?
+    Alternatively, what are the numerical thresholds, if any, that cause the number of limits (for some r-value)
+    to, for example, change from 3 limits to 6 limits?
+
+3.) What types of plots can be used? How could we generate them?
+
+
+Direct Suggestions:
+1.) Compile a catalog for values of 'r' such that the behavior of Xn+1(r) can be known.
+2.) Devise informative or intuitively-insightful graphics to show Xn+1's behavior as a function of r.
+3.) Discover new things.
+4.) Use visuals/computer programs as a tool for writing rigorous proofs--the true goal.
