@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import decimaldebian-c-1vcpu-2gb-nyc1-01 on pts/0 jobs:00 7 files 36K            Wed Sep 12 19:05from decimal import getcontext
+import decimal
+from decimal import getcontext
 import sys
 import numpy as np
 
