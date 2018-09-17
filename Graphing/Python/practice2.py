@@ -9,7 +9,7 @@ import numpy as np #mathematical stuff
 ####INTERACTIVE bby
 
 r=widgets.FloatSlider(min=0.001,max=4.5,value=0,description='Constant:')#add a slider for r values
-display(r)
+display(r)#this will display widget
 
 x=range(2000)
 x[0]=0.5
