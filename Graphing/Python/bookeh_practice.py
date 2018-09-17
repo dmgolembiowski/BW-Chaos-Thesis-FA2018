@@ -5,9 +5,8 @@
 import pylab as plt #plots
 import numpy as np #mathematical stuff
 from bokeh.plotting import figure, output_notebook, show
-from bokeh.models.sources import ColumnDataSource
 from bokeh.models import HoverTool, BoxZoomTool, PanTool, WheelZoomTool
-from bokeh.models import Range1d, Range
+
 
 output_notebook()#for jupyter notebook only
 plot1 = figure(plot_width=900, plot_height=700,x_range=(1980,2000))#looking at last 20 values
