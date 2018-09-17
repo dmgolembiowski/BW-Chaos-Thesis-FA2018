@@ -8,7 +8,7 @@ import pylab as plt #plots
 import numpy as np #mathematical stuff
 ####INTERACTIVE bby
 
-r=widgets.FloatSlider(min=0.001,max=4.5,value=0,description='Constant:')
+r=widgets.FloatSlider(min=0.001,max=4.5,value=0,description='Constant:')#add a slider for r values
 display(r)
 
 x=range(2000)
