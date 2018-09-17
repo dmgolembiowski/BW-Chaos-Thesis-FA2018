@@ -1,6 +1,6 @@
 #Created By Ana Dalipi
 #9/13/2018
-#Using Bookeh for a much more interactive plot
+#Using Bookeh for a much more interactive plot to pinpoint and zoom where divergence happens
 
 import pylab as plt #plots
 import numpy as np #mathematical stuff
