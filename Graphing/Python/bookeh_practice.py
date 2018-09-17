@@ -25,7 +25,7 @@ for n in range(1,2000):
 plot1.circle(range(2000),x,color="green", size=10)
 show(plot1)
 
-############Next Value of Graph
+############Next Value of R
 plot2 = figure(plot_width=900, plot_height=700,x_range=(1980,2000))#new plot
 
 x=range(2000)
