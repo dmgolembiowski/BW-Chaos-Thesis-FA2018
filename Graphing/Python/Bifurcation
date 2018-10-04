@@ -1,0 +1,49 @@
+#Created by Ana Dalipi
+#10/4/2018
+#Interactive Bifurcation Graph for the logstic equation
+
+from IPython.display import display
+import pylab as plt #plots
+import numpy as np #mathematical stuff
+%matplotlib inline
+
+from bokeh.plotting import figure, output_notebook, show
+from bokeh.models.sources import ColumnDataSource
+from bokeh.models import HoverTool, BoxZoomTool, PanTool, WheelZoomTool
+
+output_notebook()#make it interactive
+
+plot2 = figure(plot_width=900, plot_height=800,x_range=(2.5,4))
+n=1000
+r = np.linspace(0, 4.0, n)
+iterations = 1000#increase iterations
+last = 10
+x = 1e-5 * np.ones(n)
+
+
+for i in range(iterations):
+    x=r * x * (1 - x)
+    if i >= (iterations - last):
+        plot2.circle(r,x,color="purple", size=5)
+        #print(r,x)
+
+show(plot2)# display the bifurcation diagram
+
+#Squaring the x
+plot3 = figure(plot_width=800, plot_height=500,x_range=(0,1.4))#r doesn't work after the value 1.5
+n=1000
+r = np.linspace(0, 2.0, n)
+iterations = 1000
+last = 10
+x = 1e-5 * np.ones(n)
+
+
+
+for i in range(iterations):
+    x=r * (1 - np.square(x))
+    # display the bifurcation diagram.
+    if i >= (iterations - last):
+        plot3.circle(r,x,color="purple", size=5)
+        #print(r,x)
+
+show(plot3)# display the bifurcation diagram
