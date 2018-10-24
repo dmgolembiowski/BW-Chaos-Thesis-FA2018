@@ -1,0 +1,30 @@
+import pandas as pd
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.models.tools import HoverTool
+
+
+n=1000
+r = np.linspace(0, 4.0, n)
+iterations = 1000
+last = 10
+x = 1e-5 * np.ones(n)
+
+for i in range(n):
+    data = {'x':x,'r':r}
+    df = pd.DataFrame(data,index=[r])
+    columns = [
+        TableColumn(field="x", title="X values")]
+    x = r*x*(1 - x);
+    if i >= (iterations - last):
+        source = ColumnDataSource(df)  
+        hover = HoverTool(
+        tooltips= [
+        ('x', '@x'),
+        ('r','@r')])
+        p = figure(plot_width=900, plot_height=800,x_range=(2.5,4))
+        p.add_tools(hover)
+        p.circle(x='r',y='x',color="purple", size=5, source=source)
+        
+show(p)
+##Still working on this one; only half shows
