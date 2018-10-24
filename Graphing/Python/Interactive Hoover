@@ -2,7 +2,7 @@ import pandas as pd
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import ColumnDataSource
 from bokeh.models.tools import HoverTool
-
+from bokeh.models.widgets import DataTable, DateFormatter, TableColumn
 
 n=1000
 r = np.linspace(0, 4.0, n)
